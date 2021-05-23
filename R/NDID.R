@@ -60,7 +60,7 @@ NDID<-function(input_file,output_prefix){
 
   png(file="After_Normalization.png", width=500, height=389)
   model2 = loess.as(D, M_norm, plot = TRUE,pch=20)
-  dev.off
+  dev.off()
 
   zi = (M_norm - mean(M_norm))/sd(M_norm)
 
